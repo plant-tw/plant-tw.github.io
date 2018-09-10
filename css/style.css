@@ -1,0 +1,84 @@
+body {
+  background-color: #fff; }
+
+a:hover {
+  color: #262626; }
+
+.primary {
+  color: #262626; }
+
+.secondary {
+  color: #0072FF; }
+
+.bg-primary {
+  background-color: #262626 !important; }
+
+.bg-secondary {
+  background-color: #0072FF !important; }
+
+.bg-light {
+  background-color: rgba(38, 38, 38, 0.1) !important; }
+
+.btn {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem; }
+
+.btn-secondary {
+  background-color: #0072FF;
+  border-color: transparent !important; }
+  .btn-secondary:hover {
+    background-color: #0064e0; }
+
+.btn-outlined {
+  background-color: transparent !important;
+  border-color: #262626;
+  color: #262626; }
+  .btn-outlined:hover {
+    background-color: #262626 !important;
+    border-color: transparent;
+    color: #fff !important; }
+
+.list-style-none {
+  list-style: none; }
+
+.feature {
+  margin-left: -32px; }
+  .feature::before {
+    content: ' ';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    margin-right: 1rem;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+.ar-scale::before {
+  background-image: url("images/icon/measure.svg"); }
+
+.realtime::before {
+  background-image: url("images/icon/fast.svg"); }
+
+.data::before {
+  background-image: url("images/icon/database.svg"); }
+
+.workflow-card:hover {
+  background-color: #0072FF !important; }
+  .workflow-card:hover * {
+    color: #262626; }
+  .workflow-card:hover a {
+    color: #fff; }
+
+.cover img {
+  opacity: .5; }
+
+.cover:hover img {
+  opacity: 1; }
+
+.intro {
+  background: url("images/icon/taiwan-planet.svg") no-repeat 80px 20px/contain; }
+  @media screen and (max-width: 1440px) {
+    .intro {
+      background-position: right center; } }
