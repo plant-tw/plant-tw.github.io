@@ -39,7 +39,8 @@ a:hover {
     color: #fff !important; }
 
 .list-style-none {
-  list-style: none; }
+  list-style: none;
+  padding-left: 0; }
 
 .feature {
   margin-left: -32px; }
