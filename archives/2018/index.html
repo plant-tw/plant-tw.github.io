@@ -10,9 +10,10 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link rel="stylesheet" href="/css/ie10-viewport-bug-workaround.css">
+    <link rel="stylesheet" href="/slick/slick.css">
+    <link rel="stylesheet" href="/slick/slick-theme.css">
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="/css/style.css">
@@ -43,14 +44,21 @@
 
   <body>
     <div class="container-fluid">
-      <!-- <h1><a href="/">Smart Flower Atlas</a></h1>
-<p>powered by AiR(AI+AR)</p> -->
-
-      <aside class="sticky-top navbar-light g-nav shift mb-3 mb-sm-0 p-2 p-sm-0">
-        <button class="navbar-toggler ml-auto d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          🍔
-        </button>
-      </aside>
+      <div class="container my-2">
+  <div class="row">
+    <div class="col-md-4 col-sm-5 col-12 justify-content-between d-flex align-items-sm-center flex-column flex-sm-row">
+      <h1 class="d-inline-block mb-0 mr-2 h6">
+        <img class="app-icon float-left" src="/css/images/icon/taiwan-planet-solid.svg" alt="安森植物圖鑑">
+        <a href="/">Smart Flower Atlas</a>
+        <small class="d-block">powered by AiR(AI+AR)</small>
+      </h1>
+      <div class="d-block d-sm-inline d-block d-sm-inline text-right">
+        <a class="mr-2" href="/about">About</a>
+        <a href="/techdoc">Tech Doc</a>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
     <main>
       
@@ -94,14 +102,24 @@
 
 
     </main>
-    <footer class="py-4 bg-primary text-center">
-  <img src="css/images/logo-g0v.svg" alt="POWERED BY G0V">
+    <footer class="py-4 bg-secondary">
+  <div class="container">
+    <div class="d-flex align-items-sm-center justify-content-sm-center flex-column flex-sm-row">
+      <h6 class="d-sm-inline primary mr-5 mb-0">Acknowledgement</h6>
+      <div>
+        <img class="img-fluid pr-sm-5 my-3 mb-sm-0" src="/css/images/logo-g0v.svg" alt="POWERED BY G0V">
+      </div>
+      <div>
+        <img class="img-fluid" src="/css/images/SOW.png" alt="The Society of wilderness"">
+      </div>
+    </div>
+  </div>
 </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="/bootstrap/js/popper.min.js"></script>
 <script src="/bootstrap/js/bootstrap.min.js"></script>
-
+<script src="/slick/slick.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/js/ie10-viewport-bug-workaround.js"></script>
 <script src="/js/site.js"></script>

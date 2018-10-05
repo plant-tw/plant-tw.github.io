@@ -10,9 +10,10 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link rel="stylesheet" href="/css/ie10-viewport-bug-workaround.css">
+    <link rel="stylesheet" href="/slick/slick.css">
+    <link rel="stylesheet" href="/slick/slick-theme.css">
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="/css/style.css">
@@ -43,161 +44,113 @@
 
   <body>
     <div class="container-fluid">
-      <!-- <h1><a href="/">Smart Flower Atlas</a></h1>
-<p>powered by AiR(AI+AR)</p> -->
-
-      <aside class="sticky-top navbar-light g-nav shift mb-3 mb-sm-0 p-2 p-sm-0">
-        <button class="navbar-toggler ml-auto d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          🍔
-        </button>
-      </aside>
+      <div class="container my-2">
+  <div class="row">
+    <div class="col-md-4 col-sm-5 col-12 justify-content-between d-flex align-items-sm-center flex-column flex-sm-row">
+      <h1 class="d-inline-block mb-0 mr-2 h6">
+        <img class="app-icon float-left" src="/css/images/icon/taiwan-planet-solid.svg" alt="安森植物圖鑑">
+        <a href="/">Smart Flower Atlas</a>
+        <small class="d-block">powered by AiR(AI+AR)</small>
+      </h1>
+      <div class="d-block d-sm-inline d-block d-sm-inline text-right">
+        <a class="mr-2" href="/about">About</a>
+        <a href="/techdoc">Tech Doc</a>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
     <main>
-      <section class="container py-4 intro">
-  <div class="row">
-    <div class="col-xl-7 ml-xl-auto col-md-12">
-      <div class="py-5">
-        <h1 class="secondary">Smart Flower Atlas</h1>
-        <h2 class="secondary">powered by AiR(AI+AR)</h2>
-      </div>
-      <div class="py-3">
-        <p class="h4">Advanced Image Recognition System</p>
-        <button class="btn btn-secondary btn-lg" onclick="document.location='#workflow';return false;">Participate</button><small class="secondary ml-2">See the workflow for developer</small>
-      </div>
-      <div class="pt-5 pb-3">
-        <p>A smart flower atlas for Daan Forest Park in Taipei, built on open source image recognition systems, powered by advanced artificial intelligence (AI) and Augmented Reality (AR) technologies.</p>
-        <a href="https://grants.g0v.tw/projects/5a49255d8b4d8d001efe2e6a" target="_blank" class="btn btn-primary btn-outlined btn-sm" title="Read our proposal">Initial Proposal</a>
-        <small class="ml-2 text-muted">Written in Chinese</small>
-      </div>
+      <section class="container">
+  <div class="single-item mb-10 row">
+    <div>
+      <video class="w-100" poster="/css/images/video-cover-campanilla.jpg" playsinline autoplay muted loop>
+        <source src="/css/images/sfa-intro_campanilla.mp4" type="video/mp4">
+        <source src="/css/images/sfa-intro_campanilla.webm" type="video/webm">
+      </video>
+    </div>
+    <div>
+      <video class="w-100" poster="/css/images/video-cover-ragooncreeper.jpg" playsinline autoplay muted loop>
+        <source src="/css/images/sfa-intro_rangoon- creeper.mp4" type="video/mp4">
+        <source src="/css/images/sfa-intro_rangoon- creeper.webm" type="video/webm">
+      </video>
+    </div>
+    <div>
+      <video class="w-100" poster="/css/images/video-cover-wedelia.jpg" playsinline autoplay muted loop>
+        <source src="/css/images/sfa-intro_wedelia.mp4" type="video/mp4">
+        <source src="/css/images/sfa-intro_wedelia.webm" type="video/webm">
+      </video>
+    </div>
+    <div>
+      <video class="w-100" poster="/css/images/video-cover-yellow-water-lily.jpg" playsinline autoplay muted loop>
+        <source src="/css/images/sfa-intro_yellow-water-lily.mp4" type="video/mp4">
+        <source src="/css/images/sfa-intro_yellow-water-lily.webm" type="video/webm">
+      </video>
+    </div>
+  </div>
+  <div class="row mb-10">
+    <div class="col-12">
+      <h1>Advanced Image Recognition System</h1>
+    </div>
+    <div class="col-sm-8 col-12">
+      <p>A smart flower atlas for Daan Forest Park in Taipei, built on open source image recognition systems, powered
+        by advanced artificial intelligence (AI) and Augmented Reality (AR) technologies.
+      </p>
+      <a href="https://grants.g0v.tw/projects/5a49255d8b4d8d001efe2e6a" target="_blank"
+        title="Read our proposal">
+        Our original proposal is here, only in Chinese (中文)
+      </a>
     </div>
   </div>
 </section>
-<section class="py-4 bg-primary">
-  <div class="container">
-    <h1 class="secondary h5 text-center my-4">Features</h1>
-    <ul class="list-style-none text-white text-center">
-      <li class="h4 mb-5 feature ar-scale">Data collection with viewing angles and AR scale</li>
-      <li class="h4 mb-5 feature realtime">On-device realtime flower identification <span class="d-block h6">(it's extremely fast)</span></li>
-      <li class="h4 mb-5 feature data">Open source and open data</li>
-    </ul>
+<section class="container mb-10">
+    <h1>Feature</h1>
+    <div class="row my-5">
+      <div class="col-sm-4 col-12 mb-5 mb-sm-0">
+        <h2 class="feature ar-scale">Data collection with viewing angles and AR scale</h2>
+      </div>
+      <div class="col-sm-4 col-12 mb-5 mb-sm-0">
+        <h2 class="feature realtime">On-device realtime flower identification (it'sextremely fast)</h2>
+      </div>
+      <div class="col-sm-4 col-12">
+          <h2 class="feature data">Open source and open data</h2>
+        </div> 
+      </div>
+</section>
+<section class="container mb-10">
+  <div class="row justify-content-center">
+    <div class="col-sm-2 col-8 mb-2 mb-sm-0">
+      <a href="https://testflight.apple.com/join/7BvI4CBk" target="_blank" title="Testing iOS app with TestFlight">
+        <img class="img-fluid" src="css/images/download-ios.svg">
+      </a>
+    </div>
+    <div class="col-sm-2 col-8">
+        <a href="https://play.google.com/store/apps/details?id=prada.lab.android.plantscamera" target="_blank" title="Download on Google Play">
+          <img class="img-fluid" src="css/images/download-googledplay.svg">
+        </a>
+    </div>
   </div>
+</section>
 
-</section>
-<section class="py-4 bg-light">
-  <div class="container col-xl-5 col-lg-12" id="workflow">
-      <h1 class="h5 secondary text-center my-4">Workflow</h1>
-      <ol class="list-style-none">
-        <li class="bg-white mb-2 p-4 workflow-card">
-            <h1 class="h4 secondary mb-3">1. Data collection</h1>
-            <span class="d-block h6 mb-0 primary">PlantsCam-iOS</span>
-            <a href="https://github.com/plant-tw/PlantsCam-iOS" target="_blank" title="Step 1, data collection" class="d-block">https://github.com/plant-tw/PlantsCam-iOS</a>
-        </li>
-        <li class="bg-white mb-2 p-4 workflow-card">
-            <h1 class="h4 secondary mb-3">2. Data labeling</h1>
-            <span class="d-block h6 mb-0 primary">PlantsData</span>
-            <a href="https://github.com/plant-tw/PlantsData" target="_blank" title="Step 2, data labeling" class="d-block">https://github.com/plant-tw/PlantsData</a>
-        </li>
-        <li class="bg-white mb-2 p-4 workflow-card">
-            <h1 class="h4 secondary mb-3">3. AI training</h1>
-            <span class="d-block h6 mb-0 primary">models_plant</span>
-            <a href="https://github.com/plant-tw/models_plant" target="_blank" title="Step 3, AI training" class="d-block">https://github.com/plant-tw/models_plant</a>
-        </li>
-        <li class="bg-white mb-2 p-4 workflow-card">
-            <h1 class="h4 secondary mb-3">4. Identification client apps</h1>
-            <span class="d-block h6 mb-0 primary">PlantsCam-iOS</span>
-            <a href="https://github.com/plant-tw/PlantsCam-iOS" target="_blank" title="Step 4, iOS" class="d-block">https://github.com/plant-tw/PlantsCam-iOS</a>
-            <span class="d-block h6 mt-3 mb-0 primary">PlantsCam-Android</span>
-            <a href="https://github.com/plant-tw/PlantsCam-Android" target="_blank" title="Step 4, Android" class="d-block">https://github.com/plant-tw/PlantsCam-Android</a>
-        </li>
-      </ol>
-  </div>
-</section>
-<section class="bg-secondary py-4">
-  <div class="container">
-    <h1 class="h5 text-center text-white mt-3 mb-5">Presentation</h1>
-    <div class="row">
-      <div class="col-xl-4 mb-4">
-        <a href="https://grants.g0v.tw/projects/5a49255d8b4d8d001efe2e6a" target="_blank" class="cover" title="See our origianal proposal">
-          <img src="css/images/presentation-cover_proposal.jpg" class="img-fluid rounded">
-        </a>
-        <h2 class="h6 text-white mt-2">Original Proposal (Chinese)</h2>
-      </div>
-      <div class="col-xl-4 mb-4">
-        <a href="https://drive.google.com/drive/folders/1WAys4JMNgNhl7cCZip5D9tfTJcLrAaH7" target="_blank" class="cover" title="Some Slides">
-          <img src="css/images/presentation-cover_slides.jpg" class="img-fluid rounded">
-        </a>
-        <h2 class="h6 text-white mt-2">Slides</h2>
-      </div>
-      <div class="col-xl-4 mb-4">
-        <a href="https://www.youtube.com/watch?v=IJWqfTIHj0s&t=0s&index=5&list=PLdwQWxpS513C6dT8dVq-VDQ2tzjgeugqN" target="_blank" class="cover" title="">
-          <img src="css/images/presentation-cover_demo-time.jpg" class="img-fluid rounded">
-        </a>
-        <h2 class="h6 text-white mt-2">Demo Time</h2>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="py-4">
-  <div class="container">
-    <h1 class="h5 text-center secondary">Team</h1>
-    <div class="row justify-content-center">
-      <div class="col-9 col-md-7">
-        <div class="mb-xl-5 mb-4">
-          <h2 class="h6 mb-0">Denken Chen</h2>
-          <small>
-            <a href="https://twitter.com/denkeni" class="d-block mb-1 text-muted" target="_blank" title="Denken's twitter">@denkeni</a>
-            <span class="d-block">Project initiator and leader, iOS app developer</span>
-          </small>
-        </div>
-        <div class="row">
-          <div class="col-6 col-lg mb-4">
-            <h2 class="h6 mb-0">Fumin Wang</h2>
-            <small>
-              <a href="https://twitter.com/awawfumin" class="d-block mb-1 text-muted" target="_blank" title="Fumin's twitter">@awawfumin</a>
-              <span class="d-block">AI engineer</span>
-            </small>
-          </div>
-          <div class="col-6 col-lg mb-4">
-            <h2 class="h6 mb-0">Ru Lu</h2>
-            <small>
-              <a href="https://twitter.com/x4base" class="d-block mb-1 text-muted" target="_blank" title="Ru Lu hasn't tweeted!">@x4base</a>
-              <span class="d-block">AI engineer</span>
-            </small>
-          </div>
-          <div class="col-6 col-lg mb-4">
-            <h2 class="h6 mb-0">Prada Hsiung</h2>
-            <small>
-              <a href="https://twitter.com/bearprada" class="d-block mb-1 text-muted" target="_blank" title="Prada's twitter">@bearprada</a>
-              <span class="d-block">Android app developer</span>
-            </small>
-          </div>
-          <div class="col-6 col-lg mb-4">
-            <h2 class="h6 mb-0">Wanyu Chang</h2>
-            <small>
-              <a href="https://twitter.com/wwwanyuchang" class="d-block mb-1 text-muted" target="_blank" title="Wanyu's twitter">@wwwanyuchang</a>
-              Graphic Designer
-            </small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<nav>
-  <ul class="pager">
-    
-    
-  </ul>
-</nav>
     </main>
-    <footer class="py-4 bg-primary text-center">
-  <img src="css/images/logo-g0v.svg" alt="POWERED BY G0V">
+    <footer class="py-4 bg-secondary">
+  <div class="container">
+    <div class="d-flex align-items-sm-center justify-content-sm-center flex-column flex-sm-row">
+      <h6 class="d-sm-inline primary mr-5 mb-0">Acknowledgement</h6>
+      <div>
+        <img class="img-fluid pr-sm-5 my-3 mb-sm-0" src="/css/images/logo-g0v.svg" alt="POWERED BY G0V">
+      </div>
+      <div>
+        <img class="img-fluid" src="/css/images/SOW.png" alt="The Society of wilderness"">
+      </div>
+    </div>
+  </div>
 </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="/bootstrap/js/popper.min.js"></script>
 <script src="/bootstrap/js/bootstrap.min.js"></script>
-
+<script src="/slick/slick.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/js/ie10-viewport-bug-workaround.js"></script>
 <script src="/js/site.js"></script>

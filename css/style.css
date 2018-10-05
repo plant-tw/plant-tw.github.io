@@ -1,40 +1,47 @@
+@charset "UTF-8";
 body {
   background-color: #fff; }
 
-a:hover {
-  color: #262626; }
+a {
+  color: #469800; }
+  a:hover {
+    color: #3d8400; }
+
+.app-icon {
+  width: 40px;
+  height: 40px; }
 
 .primary {
-  color: #262626; }
+  color: #469800; }
 
 .secondary {
-  color: #0072FF; }
+  color: #262626; }
 
 .bg-primary {
-  background-color: #262626 !important; }
+  background-color: #469800 !important; }
 
 .bg-secondary {
-  background-color: #0072FF !important; }
+  background-color: #262626 !important; }
 
 .bg-light {
-  background-color: rgba(38, 38, 38, 0.1) !important; }
+  background-color: rgba(70, 152, 0, 0.1) !important; }
 
 .btn {
   padding-left: 1.4rem;
   padding-right: 1.4rem; }
 
 .btn-secondary {
-  background-color: #0072FF;
+  background-color: #262626;
   border-color: transparent !important; }
   .btn-secondary:hover {
-    background-color: #0064e0; }
+    background-color: #171717; }
 
 .btn-outlined {
   background-color: transparent !important;
-  border-color: #262626;
-  color: #262626; }
+  border-color: #469800;
+  color: #469800; }
   .btn-outlined:hover {
-    background-color: #262626 !important;
+    background-color: #469800 !important;
     border-color: transparent;
     color: #fff !important; }
 
@@ -42,19 +49,18 @@ a:hover {
   list-style: none;
   padding-left: 0; }
 
-.feature {
-  margin-left: -32px; }
-  .feature::before {
-    content: ' ';
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    vertical-align: middle;
-    margin-right: 1rem;
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat; }
+.feature::before {
+  content: ' ';
+  display: block;
+  width: 80px;
+  height: 80px;
+  line-height: 32px;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .ar-scale::before {
   background-image: url("images/icon/measure.svg"); }
@@ -66,9 +72,9 @@ a:hover {
   background-image: url("images/icon/database.svg"); }
 
 .workflow-card:hover {
-  background-color: #0072FF !important; }
+  background-color: #262626 !important; }
   .workflow-card:hover * {
-    color: #262626; }
+    color: #469800; }
   .workflow-card:hover a {
     color: #fff; }
 
@@ -78,8 +84,71 @@ a:hover {
 .cover:hover img {
   opacity: 1; }
 
-.intro {
-  background: url("images/icon/taiwan-planet.svg") no-repeat 80px 20px/contain; }
-  @media screen and (max-width: 1440px) {
-    .intro {
-      background-position: right center; } }
+.mb-10 {
+  margin-bottom: 10rem !important; }
+  @media screen and (max-width: 414px) {
+    .mb-10 {
+      margin-bottom: 7rem !important; } }
+
+.slick-dots li.slick-active button::before,
+.slick-dots li button::before {
+  color: transparent; }
+
+.slick-slide {
+  height: inherit; }
+
+.slick-dots {
+  position: relative;
+  bottom: inherit;
+  margin-top: 20px; }
+
+ul.slick-dots {
+  list-style: none; }
+  ul.slick-dots li {
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .7; }
+    @media screen and (max-width: 414px) {
+      ul.slick-dots li {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 50px; } }
+    ul.slick-dots li.slick-active, ul.slick-dots li:hover {
+      opacity: 1; }
+    ul.slick-dots li:after {
+      display: block;
+      position: absolute;
+      top: 140px;
+      width: 100%;
+      padding: 0 15px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      white-space: pre; }
+      @media screen and (max-width: 414px) {
+        ul.slick-dots li:after {
+          top: 120px; } }
+    ul.slick-dots li:nth-of-type(1) {
+      background-image: url("images/slickdot-campanilla.png"); }
+      ul.slick-dots li:nth-of-type(1):after {
+        content: 'Campanilla \A 軟枝黃蟬'; }
+    ul.slick-dots li:nth-of-type(2) {
+      background-image: url("images/slickdot-rangoon-creeper.png"); }
+      ul.slick-dots li:nth-of-type(2):after {
+        content: 'Ragoon creeper \A 使君子'; }
+    ul.slick-dots li:nth-of-type(3) {
+      background-image: url("images/slickdot-yellow-water-lily.png"); }
+      ul.slick-dots li:nth-of-type(3):after {
+        content: 'Yellow water lily \A 台灣萍蓬草'; }
+    ul.slick-dots li:nth-of-type(4) {
+      background-image: url("images/slickdot-wedelia.png"); }
+      ul.slick-dots li:nth-of-type(4):after {
+        content: 'Wedelia \A 蟛蜞菊'; }
+
+footer img {
+  max-height: 28px; }
+  @media screen and (min-width: 768px) {
+    footer img {
+      max-height: 48px; } }
