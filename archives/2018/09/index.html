@@ -43,24 +43,22 @@
 </head>
 
   <body>
-    <div class="container-fluid">
-      <div class="container my-2">
-  <div class="row">
-    <div class="col-md-4 col-sm-5 col-12 justify-content-between d-flex align-items-sm-center flex-column flex-sm-row">
-      <h1 class="d-inline-block mb-0 mr-2 h6">
-        <img class="app-icon float-left" src="/css/images/icon/taiwan-planet-solid.svg" alt="安森植物圖鑑">
-        <a href="/">Smart Flower Atlas</a>
-        <small class="d-block">powered by AiR(AI+AR)</small>
-      </h1>
-      <div class="d-block d-sm-inline d-block d-sm-inline text-right">
-        <a class="mr-2" href="/about">About</a>
-        <a href="/techdoc">Tech Doc</a>
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-    <main>
+    <header class="container fixed-top mb-2 px-0 pt-1 pb-2 bg-white shadow-lg">
+  <a class="navbar-brand mr-2 position-absolute d-sm-block" href="/">
+    <h1 class="mb-0 h6">
+      <img class="app-icon float-left" src="/css/images/icon/taiwan-planet-solid.svg" alt="安森植物圖鑑">
+      Smart Flower Atlas
+      <small class="d-block">
+        powered by AiR(AI+AR)
+      </small>
+    </h1>
+  </a>
+  <nav class="nav justify-content-center pt-5 pt-sm-0">
+    <a class="nav-link " href="/about">About</a>
+    <a class="nav-link " href="/techdoc">Documentation</a>
+  </nav>
+</header>
+    <main class="mt-5">
       
   
   
@@ -107,10 +105,14 @@
     <div class="d-flex align-items-sm-center justify-content-sm-center flex-column flex-sm-row">
       <h6 class="d-sm-inline primary mr-5 mb-0">Acknowledgement</h6>
       <div>
-        <img class="img-fluid pr-sm-5 my-3 mb-sm-0" src="/css/images/logo-g0v.svg" alt="POWERED BY G0V">
+        <a href="https://g0v.tw/" target="_blank">
+          <img class="img-fluid pr-sm-5 my-3 mb-sm-0" src="/css/images/logo-g0v.svg" alt="POWERED BY G0V">
+        </a>
       </div>
       <div>
-        <img class="img-fluid" src="/css/images/SOW.png" alt="The Society of wilderness"">
+        <a href="https://www.sow.org.tw"target="blank">
+          <img class="img-fluid" src="/css/images/SOW.png" alt="The Society of wilderness"">
+        </a>
       </div>
     </div>
   </div>

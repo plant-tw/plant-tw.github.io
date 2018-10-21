@@ -2,10 +2,28 @@
 body {
   background-color: #fff; }
 
-a {
+html, body {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
+
+footer {
+  flex-shrink: 0; }
+
+a,
+.active {
   color: #469800; }
-  a:hover {
+  a:hover,
+  .active:hover {
     color: #3d8400; }
+
+nav a {
+  color: #666666; }
 
 .app-icon {
   width: 40px;
@@ -16,6 +34,9 @@ a {
 
 .secondary {
   color: #262626; }
+
+.text-primary {
+  color: #469800 !important; }
 
 .bg-primary {
   background-color: #469800 !important; }
@@ -88,7 +109,7 @@ a {
   margin-bottom: 10rem !important; }
   @media screen and (max-width: 414px) {
     .mb-10 {
-      margin-bottom: 7rem !important; } }
+      margin-bottom: 6rem !important; } }
 
 .slick-dots li.slick-active button::before,
 .slick-dots li button::before {

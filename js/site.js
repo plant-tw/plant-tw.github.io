@@ -4,5 +4,5 @@ $('.single-item').slick({
   arrows: false,
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 3400
+  autoplaySpeed: 3000
 });
